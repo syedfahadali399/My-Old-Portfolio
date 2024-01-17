@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/27.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 1300px;
+}
+
+.li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.a:hover:after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    position: relative;
+    text-decoration: wavy;
+}
+
+.header-text .h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text .span{
+    color: #ff004f;
+}
+
+.about{
+    padding: 80px 0;
+    color: #ababab;
+    position: relative;
+    /* left: 180px; */
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.ul1{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.li1{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.Developer{
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.active-tab{
+    display: block;
+}
+
+.sub-title-1{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 50px;
+}
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.first{
+    background: #262626;
+    padding: 40px;
+    font-weight: 300;
+    font-size: 13px;
+    border-radius: 24px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.second{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #080808;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.link:hover{
+    background-color: dodgerblue;
+}
+
+.paragraph{
+    color: #fff;
+}
+
+.first:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.para{
+    color: #fff;
+}
+
+.h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.tag{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 60px;
+    background: #fff;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.work:hover .pic{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    margin-right: 88px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icon a i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    margin-top: 25px;
+    transition: transform 0.5s;
+}
+
+.social-icon a i:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        background-image: url;
+    }
+}
