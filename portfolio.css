@@ -74,6 +74,42 @@ body{
     color: #ff004f;
 }
 
+@media only screen and (max-width: 1200px) {
+    .header{
+        width: 140vw;
+        height: 140vh;
+    }
+    .nav{
+        display: contents;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header{
+        width: 185vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        width: 296vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header{
+        width: 400vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header{
+        width: 401vw;
+    }
+}
+
+/* About Css */
+
 .about{
     padding: 80px 0;
     color: #ababab;
@@ -93,7 +129,7 @@ body{
 
 .img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 32px;
 }
 
 .about-col-2{
@@ -156,6 +192,61 @@ body{
 .active-tab{
     display: block;
 }
+
+@media only screen and (max-width: 1200px) {
+    .row{
+        width: 139vw;
+    }
+    .about-col-2{
+        margin-left: 32px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .row{
+        width: 184vw;
+    }
+    .about-col-2{
+        margin-left: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        width: 295vw;
+    }
+    .about-col-2{
+        margin-left: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .row{
+        width: 399vw;
+    }
+    .about-col-2{
+        margin-left: 32px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .row{
+        width: 400vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .about-col-1{
+        margin-bottom: 64px;
+    }
+    .img{
+        width: 640px;
+    }
+}
+
+/* Portfolio */
+/* Services */
 
 .sub-title-1{
     font-size: 60px;
@@ -238,6 +329,7 @@ body{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border-radius: 48px;
 }
 
 .pic{
@@ -311,6 +403,83 @@ body{
     background: #ff004f;
 }
 
+@media only screen and (max-width: 1200px) {
+    #portfolio{
+        width: 139vw;
+    }
+    #services{
+        width: 139vw;
+    }
+    .sub-title-1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #portfolio{
+        width: 184vw;
+    }
+    #services{
+        width: 184vw;
+    }
+    .sub-title-1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #portfolio{
+        width: 295vw;
+    }
+    #services{
+        width: 295vw;
+    }
+    .sub-title-1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #portfolio{
+        width: 399vw;
+    }
+    #services{
+        width: 399vw;
+    }
+    .sub-title-1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #services{
+        width: 400vw;
+    }
+    .services-list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #portfolio{
+        width: 400vw;
+    }
+    .sub-title-1{
+        text-align: center;
+    }
+    .work{
+        width: 236vw;
+    }
+    .work-list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+/* Conatct */
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -377,6 +546,52 @@ form input, form textarea{
     border-radius: 6px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .row{
+        justify-content: center;
+        width: 139vw;
+    }
+    .contact-left{
+        padding-left: 24px;
+    }
+    .contact-right{
+        margin-right: 72px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .row{
+        justify-content: center;
+        width: 184vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        justify-content: center;
+        width: 295vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .row{
+        justify-content: center;
+        width: 399vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .row{
+        justify-content: center;
+        width: 400vw;
+    }
+    .contact-right{
+        margin-left: 64px;
+    }
+}
+
+/* Copyright */
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -391,8 +606,32 @@ form input, form textarea{
     color: #ff004f;
 }
 
-@media only screen and (max-width: 600px){
-    .header{
-        background-image: url;
+@media only screen and (max-width: 1200px) {
+    .copyright{
+        width: 139vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .copyright{
+        width: 184vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .copyright{
+        width: 295vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .copyright{
+        width: 399vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .copyright{
+        width: 400vw;
     }
 }
